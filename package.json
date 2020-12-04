@@ -7,6 +7,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
+    "build:prod": "yarn build --sourceMap false",
     "test": "jest --silent",
     "pretest:coverage": "rimraf coverage",
     "test:coverage": "yarn test --coverage",
