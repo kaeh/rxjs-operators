@@ -1,2 +1,9 @@
-tsconfig.json
+.github
+.vscode
+coverage
 src
+.editorconfig
+.eslintignore
+.eslintrc
+jest.config.ts
+tsconfig.json
