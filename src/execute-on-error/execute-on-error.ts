@@ -12,14 +12,12 @@ const defaultOptions: Options<null> = { suppressErrors: false, defaultValue: nul
  * Execute a function when the stream is on an error state.
  *
  * Options gives the possibility to suppress the error and return a default value in the stream instead
- *
- * @deprecated Use executeOnError instead. It will be removed in a future release.
  */
-export const notifyOnError = <T = unknown>(notifyFn: (error: unknown) => void, options?: Partial<Options<T>>): OperatorFunction<T, T> => {
+export const executeOnError = <T = unknown>(fn: (error: unknown) => void, options?: Partial<Options<T>>): OperatorFunction<T, T> => {
   const sanitizedOptions = { ...defaultOptions, ...(options ? options : {}) };
 
   return catchError<T, Observable<T>>((err) => {
-    notifyFn(err);
+    fn(err);
     return sanitizedOptions.suppressErrors ? of(sanitizedOptions.defaultValue) : throwError(err);
   });
 };
