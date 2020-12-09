@@ -35,6 +35,12 @@ const defaultDebugOptions = {
 const generateStyles = ({ background, fontSize, fontColor }: Partial<DebugStepOptions>) =>
   `background: ${background}; color: ${fontColor}; padding: 3px; font-size: ${fontSize};`;
 
+/**
+ * Display the value of the stream during its lifecycle (next, error, complete) in the console.
+ *
+ * @param tag the stream tag to display in the console
+ * @param options
+ */
 export const debug = <T = unknown>(tag: string, options?: Partial<DebugOptions>): MonoTypeOperatorFunction<T> => {
   const sanitizedOptions: DebugOptions = {
     next: { ...defaultDebugOptions.next, ...options?.next },
