@@ -5,4 +5,4 @@ This is an extension of [Rxjs](https://github.com/ReactiveX/rxjs) in order to pr
 ## Operators
 
 - [debug](/src/debug)
-- [executeOnError](/src/executeOnError)
+- [executeOnError](/src/execute-on-error)
