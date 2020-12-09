@@ -2,7 +2,7 @@
 
 This operator has been created because we often needed to perform an action on error then rethrow or suppress it with another value.
 
-`executOnError` is used to execute the given function whenever the stream encounter an error. By default it will rethrow the error but it is possible to suppress it and continue the stream with a default value which will be `null` by default.
+`executeOnError` is used to execute the given function whenever the stream encounter an error. By default it will rethrow the error but it is possible to suppress it and continue the stream with a default value which will be `null` by default.
 
 It is used like this
 
