@@ -1,16 +1,16 @@
 {
   "name": "@kaeh/rxjs-operators",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Library of commonly used Rxjs operators",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist/"
   ],
   "scripts": {
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && yarn tsc",
     "test": "jest --silent",
     "test:coverage": "rimraf coverage && yarn test --coverage",
     "lint": "eslint . --ext .ts"
