@@ -15,7 +15,7 @@ jobs:
       - run: yarn install --immutable
       - run: yarn build
       # Publish to npm
-      - run: yarn publish --access public
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       # Setup .npmrc file to publish to GitHub Packages
@@ -25,6 +25,6 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: "@kaeh"
       # Publish to GitHub Packages
-      - run: yarn publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
