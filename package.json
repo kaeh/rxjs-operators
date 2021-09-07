@@ -13,8 +13,7 @@
     "build": "rimraf dist && tsc",
     "test": "jest --silent",
     "test:coverage": "rimraf coverage && yarn test --coverage",
-    "lint": "eslint . --ext .ts",
-    "prepublishOnly": "yarn build"
+    "lint": "eslint . --ext .ts"
   },
   "author": "kaeh",
   "license": "ISC",
