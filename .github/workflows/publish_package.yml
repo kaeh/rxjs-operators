@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: "10.x"
           registry-url: "https://registry.npmjs.org"
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn build:prod
       # Publish to npm
       - run: yarn publish --access public
