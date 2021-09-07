@@ -1,6 +1,6 @@
 {
   "name": "@kaeh/rxjs-operators",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Library of commonly used Rxjs operators",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
