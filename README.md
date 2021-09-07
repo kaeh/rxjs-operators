@@ -6,3 +6,4 @@ This is an extension of [Rxjs](https://github.com/ReactiveX/rxjs) in order to pr
 
 - [debug](/src/debug)
 - [executeOnError](/src/execute-on-error)
+- [switchMapIf](src/switch-map-if)
