@@ -666,6 +666,7 @@ __metadata:
   resolution: "@kaeh/rxjs-operators@workspace:."
   dependencies:
     "@types/jest": ^26.0.24
+    "@types/node": ^16.7.13
     "@typescript-eslint/eslint-plugin": ^4.31.0
     "@typescript-eslint/parser": ^4.31.0
     eslint: ^7.32.0
@@ -848,6 +849,13 @@ __metadata:
   version: 14.14.20
   resolution: "@types/node@npm:14.14.20"
   checksum: ec19a950a1999423c4233e9edf9b1c3e110b8f1aec987d833c2ee080b2a56efc7a91a5ceaef8e77f9b78ddb2d3da08884fc0817d290895768ad2faecbbdffd6c
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16.7.13":
+  version: 16.7.13
+  resolution: "@types/node@npm:16.7.13"
+  checksum: 15dc28aa44674d3f49dcca4a6523b6ab1ef9bbea5c659057bec13153e1873718d6b62ab0ea57a3d57ee37f0f1136ae30e3ea503df43b0afa3ae437c8750be7f5
   languageName: node
   linkType: hard
 
