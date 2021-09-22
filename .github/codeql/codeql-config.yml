@@ -1,0 +1,6 @@
+paths:
+  - src
+paths-ignore:
+  - src/index.ts
+  - src/public_api.ts
+  - "src/**/*.spec.ts"
