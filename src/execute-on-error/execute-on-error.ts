@@ -13,14 +13,14 @@ const defaultOptions: Options<null> = { suppressErrors: false, defaultValue: nul
  *
  * Options gives the possibility to suppress the error and return a default value in the stream instead
  */
-export const executeOnError = <T = unknown>(
+export const executeOnError = <TIn = unknown, TOut = TIn>(
   fn: (error: unknown) => void,
-  options?: Partial<Options<T>>
-): OperatorFunction<T, T | null | undefined> => {
+  options?: Partial<Options<TOut>>
+): OperatorFunction<TIn, TOut | null | undefined> => {
   const sanitizedOptions = { ...defaultOptions, ...(options ? options : {}) };
 
-  return catchError<T, Observable<T | null | undefined>>((err: unknown) => {
+  return catchError<TIn, Observable<TOut | null | undefined>>((err: unknown) => {
     fn(err);
     return sanitizedOptions.suppressErrors ? of(sanitizedOptions.defaultValue) : throwError(err);
-  });
+  }) as OperatorFunction<TIn, TOut | null | undefined>;
 };
