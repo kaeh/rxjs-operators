@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.32.0"],
             ["jest", "virtual:5a611d592610b970ac642d09dbe2f976b6550b1a5143f48091c679f7d527e3060a75e5a9e5b253d26145d763252528c727e6b3a61bd390bc8fb65c5816bdee62#npm:27.2.1"],
             ["rimraf", "npm:3.0.2"],
-            ["rxjs", "npm:6.6.7"],
+            ["rxjs", "npm:7.5.7"],
             ["ts-jest", "virtual:5a611d592610b970ac642d09dbe2f976b6550b1a5143f48091c679f7d527e3060a75e5a9e5b253d26145d763252528c727e6b3a61bd390bc8fb65c5816bdee62#npm:27.0.5"],
             ["ts-node", "virtual:5a611d592610b970ac642d09dbe2f976b6550b1a5143f48091c679f7d527e3060a75e5a9e5b253d26145d763252528c727e6b3a61bd390bc8fb65c5816bdee62#npm:10.2.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
@@ -1379,7 +1379,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.32.0"],
             ["jest", "virtual:5a611d592610b970ac642d09dbe2f976b6550b1a5143f48091c679f7d527e3060a75e5a9e5b253d26145d763252528c727e6b3a61bd390bc8fb65c5816bdee62#npm:27.2.1"],
             ["rimraf", "npm:3.0.2"],
-            ["rxjs", "npm:6.6.7"],
+            ["rxjs", "npm:7.5.7"],
             ["ts-jest", "virtual:5a611d592610b970ac642d09dbe2f976b6550b1a5143f48091c679f7d527e3060a75e5a9e5b253d26145d763252528c727e6b3a61bd390bc8fb65c5816bdee62#npm:27.0.5"],
             ["ts-node", "virtual:5a611d592610b970ac642d09dbe2f976b6550b1a5143f48091c679f7d527e3060a75e5a9e5b253d26145d763252528c727e6b3a61bd390bc8fb65c5816bdee62#npm:10.2.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
@@ -5437,11 +5437,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["rxjs", [
-        ["npm:6.6.7", {
-          "packageLocation": "./.yarn/cache/rxjs-npm-6.6.7-055046ea3c-bc334edef1.zip/node_modules/rxjs/",
+        ["npm:7.5.7", {
+          "packageLocation": "./.yarn/cache/rxjs-npm-7.5.7-602d5c56e4-edabcdb73b.zip/node_modules/rxjs/",
           "packageDependencies": [
-            ["rxjs", "npm:6.6.7"],
-            ["tslib", "npm:1.14.1"]
+            ["rxjs", "npm:7.5.7"],
+            ["tslib", "npm:2.4.1"]
           ],
           "linkType": "HARD",
         }]
@@ -6046,6 +6046,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tslib-npm-1.14.1-102499115e-dbe628ef87.zip/node_modules/tslib/",
           "packageDependencies": [
             ["tslib", "npm:1.14.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.4.1", {
+          "packageLocation": "./.yarn/cache/tslib-npm-2.4.1-36f0ed04db-19480d6e03.zip/node_modules/tslib/",
+          "packageDependencies": [
+            ["tslib", "npm:2.4.1"]
           ],
           "linkType": "HARD",
         }]
